@@ -1,0 +1,30 @@
+{
+  "name": "apifin",
+  "version": "1.0.0",
+  "description": "API Financeiro Mobile",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.19",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatomb/apifn.git"
+  },
+  "author": "Renato Monteiro Batista",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renatomb/apifn/issues"
+  },
+  "homepage": "https://github.com/renatomb/apifn#readme"
+}
