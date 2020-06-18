@@ -1,7 +1,7 @@
 const mdb = require('mongoose')
 
 const CategoraiSchema = new mdb.Schema({
-   name:String,
-   UserId:String
+   nome:String,
+   userId:String
 })
-module.exports = mdb.model('user', CategoraiSchema)
+module.exports = mdb.model('categorias', CategoraiSchema)
