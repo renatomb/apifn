@@ -56,7 +56,6 @@ module.exports = {
       }
    },
    verifyJWT(req, res, next){
-      console.log(req);
       var token = req.headers['token'];
       if (!token) return res.status(401).send({ auth: false, message: 'No token provided.' });
       jwt.verify(token, secret_jwt, function(err, decoded) {

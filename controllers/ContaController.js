@@ -3,7 +3,6 @@ const { check, validationResult } = require('express-validator');
 
 module.exports = {
    async create(req,res){        
-      
       await check('nome').exists().run(req);
       await check('banco_nome').exists().run(req);
       await check('banco_code').exists().run(req);
