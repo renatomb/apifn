@@ -2,7 +2,7 @@ const conta = require('../models/conta')
 const { check, validationResult } = require('express-validator');
 
 module.exports = {
-   async create(req,res){        
+   async create(req,res){          
       await check('nome').exists().run(req);
       await check('banco_nome').exists().run(req);
       await check('banco_code').exists().run(req);
@@ -19,7 +19,7 @@ module.exports = {
          userId:req.userId,
          created_at: Date()
       }).then(resposta =>  res.status(200).json({ processado: true, mensagem: "Conta cadastrada com sucesso."}))
-      .catch(err => res.status(400).json({'error':'ocorreu um erro no cadastramento da conta'}))
+      .catch(err => res.status(400).json({processado:false, mensagem:"Ocorreu um erro no cadastramento da conta."}))
    },
    async listarTodas(req,res){
       let contas = await conta.find({userId:req.userId})

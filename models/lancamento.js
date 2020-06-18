@@ -10,4 +10,4 @@ const LancamentoScheema = new mdb.Schema({
    categoriaId:String,
    userId:String
 })
-module.exports = mdb.model('contas', LancamentoScheema)
+module.exports = mdb.model('lancamentos', LancamentoScheema)
